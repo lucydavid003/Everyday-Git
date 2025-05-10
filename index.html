@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everyday Git</title>
+    <h1>Git</h1>
+    <P>Git is a version control software.</P>
+    <P>It allows users to revisit earlier versions of their files,
+        compare changes between versions, undo changes and a lot more.
+        A vesrion control system is a system that tracks and makes 
+        changes to files  over time.</P>
+
+      <p>Its also allow users to revisit earlier
+           versions of their files, compare changes between versions, 
+           undo changes and a lot more.</p>
+           <p> <b> Different types of version control software include:</b></p>
+           <ol>
+            <li> Subversion</li>
+             <li> Mercurial</li>
+             <li>Git</li>
+           </ol>
+           <P><em>Note that:</em>In this discussion our main focus will be <strong>Git </strong> and <strong>GitHub.</strong></P>
+           <h2>
+            How to install Git in your laptop.</h2>
+            <p>To use Git, we need to first download and install it.</p>
+            <p> To download Git,
+                 visit <a href="https://git-scm.com/download"> visit Google </a> and 
+                download the version for your platform  on Windows or Linux.</p>
+                <h3> Checking whether Git has been installed</h3>
+                <p>Inorder to check whethe Git has been installed, in your laptop successfully;
+                    <ul>
+                        <li>Open command prompt in windows</li>
+                        <li>Run the command: <b> git -- version</b></li>
+
+        
+                    </ul>
+                </p>
+                <P>It is supposed to give you this kind of result below:</P>
+             <img src="images/Check for git.jpg"
+             alt="a git check and version "
+             width="500px"/> 
+             <h2>Git Configuration</h2>
+             <p>To config your git, we do this by providing 
+                your username and email address. </p>
+                <h3> Configuring your name</h3>
+                <p>
+                    <ul>
+                        <li>Open command prompt on your laptop</li>
+                    <li>Run the command: <b>git config --global user.name "USERNAME"</b></li>
+                </p>
+           <p> Then replace "USERNAME" with your preffered name
+             for example Lucy-Wanjiru </p>
+             <p><b> git config --global user.name "Lucy-Wanjiru"</b></p>
+ <h3> Configuring your email</h3>
+     <p>
+          <ul>
+             <li>Open command prompt</li>
+     <li>Run the command: <b>git config --global user.email "EMAIL_ADDRESS"</b></li></ul>
+     </p>
+    <p>Then replace  "EMAIL_ADDRESS" with your email adress for example lucywanjiru@gmail.com</p>
+  </ul>
+</p>
+             <p><b>git config --global user.email lucywanjiru@gmail.com"</b></p>
+
+        <h3>Verifying Configuration</h3>
+        <p>We verify whether our Configurations are correct by: </p>
+        <ul>
+            <li>Open the command prompt</li>
+            <li>To verify the username, run the command:
+               <p> <b>git config user.name</b></p>
+            </li>
+            <li>The command should return the username that you set during the configuration process.</li>
+            <li>To verify the email address, run the command:
+                <p><b>git config user.email</b></p>
+            </li>
+</ul>
+ <p>Below is an example of the process:</p>
+ <img src="images/email and username .jpg"
+ alt="email and username configuration"
+ width="500px" />
+ <p>
+    <h2>Initializing a Git repository</h2>
+
+ </p>
+ <p><h3> What is a Git repository</h3></p>
+ <p>A git repo is a workspace which tracks and manages files within a folder.</p>
+ <p><h3>How to initialize a Git repository</h3></p>
+ <p>To iniatialize a Git repository</p>
+ <p>
+    <ul>
+        <li>Open your command line tool and navigate to your project directory.</li>
+        <li>Run the command: <p><Strong>git init</Strong></p></li>
+        <li>The command will initialize a git repository in the project folder, this is where git will track and manage changes to files in your project.</li>
+
+    </ul>
+</p>
+<p>
+    NOTE:Initializing a git repository is something you do once per project. Running the command git init in a project that contains a git repository will make git initialize a repository within a repository.
+    <p><em>Tip: use git status to confirm whether your project has a git repository or not, more about git status later. When you run the git status command and get the message "fatal: not a git repository..." being returned, then it means that the project does not have a git repository, you can go ahead and initialize one.
+        If you get anything else back, then it means that the current directory contains a git repository, therefore no need to initialize one again.</em></p>
+</p>
+<p>Below is a example of the process:</p>
+<p>
+    <img src="images/git initializing.jpg"
+    alt="the process of initializing a git repository"
+    width="500px" />
+    </p>
+    <p><h2>Adding files to the staging area</h2></p>
+    <p> <strong>The staging area</strong>  also known as the index is an intermediate space where you can organize changes before committing them to the repository.</p>
+    <p> <ol>
+        <li>To add  changes to the staging area use<strong> git add </strong>command. And then commit them to the repository</li></p>
+        <li>To add changes, run the command <b>git add FILE_NAME</b> to add changes to the staging area.</li>
+        <li>Replace FILE_NAME with the name of the file, for example, in my project, I have a file story1.txt with changes that I would like to add to the staging area:</li>
+        <p><b>git add story1.txt</b></p>
+        <li>You can also add multiple files to the staging area, simply list all the files as shown:</li>
+        <p><b>git add story1.txt story2.txt story3.txt </b></p>
+        <li>If you want to add all the files in one go, you can use the period symbol or -A flag.</li>
+        <p><b>git add -A </b> or <b>git add .</b></p>
+    </p>
+    <p>Below is an example of the process:</p>
+    <p>
+        <img src=""
+    </p>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
