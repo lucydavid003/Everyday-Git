@@ -120,8 +120,172 @@
     </p>
     <p>Below is an example of the process:</p>
     <p>
-        <img src=""
+        <img src="images/stage area changes.jpg"
+        alt="procces of adding changes in staging area"
+        width="500px"/>
+    
     </p>
+    <p><h2> Commiting changes</h2></p>
+    <p>Commiting will only work if there are changes in the staging area.</p>
+<p>
+    <ol>
+        <li>To commit, we use the <b>git commit</b> command.</li>
+        <li>Running git commit without passing any options will open a text editor (vi by default) for you to type in the message.</li>
+        <p><em>NOTE: there is a<strong> -m </strong>flag that allows us to pass a commit message directly without having to open a text editor.</em></p>
+        <p><b>git commit -m "MESSAGE"</b></p>
+        <li>Replace MESSAGE with a short descriptive commit message of your choosing, for example:</li>
+        <p><b>git commit -m "write story  1 to 3"</b></p>
+    </ol>
+</p>
+<p>Below is an example of the process:</p>
+<img src="images/commiting changes.jpg"
+alt="process of commiting changes"
+width="500px" />
+
+<p><h3>Viewing past commits </h3></p>
+<p>To view past commits, we use the command:
+    <p><b>git log</b></p>
+</p>
+<p>
+    <img src="images/viewing past commits.jpg"
+    alt="how to to view past commits"
+    width="500px"/>
+</p>
+<p><h3>Editing a previous commit message</h3></p>
+<p>Git offers us a way to edit the most recent commit message.</p>
+<p>Simply run the command:
+    <p><b>git commit --amend</b></p>
+    <p>this will open your default text editor  from here,and the you can edit the commit message.</p>
+</p>
+<p><h2>Branches</h2></p>
+<p>Branches are alternative timelines for a project.
+    <p><h3>Why are branches important:</h3></p>
+    <p> They allow you us to create separate contexts where we can try new things or even work on multiple ideas in parallel.</p>
+
+    </p>
+    <p><h2>Creating Branches</h2></p>
+    <p>To create a branch, we use the command:
+        <p><b>git switch BRANCH_NAME</b></p>
+        <p>Replace BRANCH_NAME with the name of the branch
+            <p><b>git switch story1</b></p>
+            if we want to make story1 the active branch.</p>
+            <p>This will change the active branch from master to story1</p>
+    </p>
+    <img src="images/creating branch.jpg"
+    alt="Creating a branch"
+    width="500px"/>
+</p>
+<p>
+    <h2>Viewing branches</h2>
+</p>
+<p>
+    <ol>
+        <li>Use the command git branch to view your existing branches.</li>
+        <li>The active branch will have a little asterisk symbol (*) beside it,and in some command line interfaces will be green in color.
+
+        </li>
+    </ol> 
+    </p>
+    <p>
+    <img src="images/viewing branches.jpg"
+    alt="how to view a branch"
+    width="500px"/>
+
+</p>
+<h2>Switching branches</h2>
+<p>
+    <ul>
+        <li> switch branches, we use the command:</li>
+        <p><b>git switch BRANCH_NAME</b></p>
+        <li>Replace BRANCH_NAME with the name of the branch, 
+            for example, if we want to make lucy-wanjiru the active branch (switching to it):</li>
+            <p><b>git switch lucy-wanjiru</b></p>
+        <li>This will change the active branch from master to lucy-wanjiru</li>
+</ul>
+</p>
+<p>Below is an example</p>
+<p>
+    <img src="images/switching branch.jpg"
+    alt="switching active branches"
+    width="500px"/>
+</p>
+<h2>Merging Branches</h2>
+<p>To merge branches:
+    <p>First, we switch to the branch where we want to merge the current branch.</p>
+    <p>We use the command:</p>
+    <p><b>git merge BRANCH_NAME</b></p>
+</p>
+<p>
+    <img src="images/merging branch.jpg"
+    alt="to merge  a branch"
+    width="500px"/>
+
+</p>
+<h2>Deleting branches</h2>
+<p>To delete a branch, we use the git branch command and pass the <b> -d </b> flag.</p>
+<p><strong>git branch -d BRANCH_NAME</strong></p>
+<p>Replace BRANCH_NAME with the name of the branch you want to delete,
+     for example, to delete the branch lucy-wanjiru:</p>
+     <p><strong>git branch -d chapter1</strong></p>
+<p>Below is an example:</p>
+
+<img src="images/deleting branch.jpg"
+alt="how to delete a branch"
+width="500px"/>
+<p>
+    <em> NOTE: Using<b> -d</b>  flag to delete a branch that has not been merged might give us an error, if are sure we want to delete the branch, we can force git to delete it by passing <b> -D </b> flag to the git branch command:</em>
+    <p><b>git branch -D BRANCH_NAME</b></p>
+    <p>Then replace BRANCH_NAME </p>
+    <b>git branch -D lucy-wanjiru</b>
+</p>
+
+<h2>Next Steps</h2>
+<p> Congratulations on reaching this point in your Git journey! You’ve covered the essential concepts and commands that every developer should know when starting with Git. But this is just the beginning.
+</p><h3>What Next?</h3>
+
+<ul>
+    <li>
+      <strong>Learn GitHub:</strong> GitHub is a platform built around Git that makes it easier to collaborate on projects. Learn how to:
+      <ul>
+        <li>Push your local repositories to GitHub</li>
+        <li>Create and manage pull requests</li>
+        
+      </ul>
+    </li>
+    <li>
+      <strong>Advanced Git Concepts:</strong> Dive deeper into topics like:
+      <ul>
+        
+        <li>Stashing changes</li>
+        <li>Working with tags</li>
+        
+      </ul>
+    </li>
+    <li>
+      <strong>Collaborating with Teams:</strong> Learn how teams work using Git. Understand:
+      <ul>
+        <li>Forking and cloning</li>
+        <li>Handling merge conflicts</li>
+        
+      </ul>
+    </li>
+    <li>
+      <strong>Explore GUI Tools:</strong> Tools like GitKraken, Sourcetree, and GitHub Desktop can help you visualize and manage your repositories.
+    </li>
+    <li>
+      <strong>Host and Deploy Projects:</strong> Try deploying your Git-tracked projects using:
+      <ul>
+        <li>GitHub Pages</li>
+        <li>Vercel</li>
+        
+      </ul>
+    </li>
+  </ul>
+  <p>
+    Git is a powerful tool, and the more you use it, the more comfortable you will become. Keep practicing, build projects, and collaborate with others. Happy coding!
+  </p
+
+
 
 
 
